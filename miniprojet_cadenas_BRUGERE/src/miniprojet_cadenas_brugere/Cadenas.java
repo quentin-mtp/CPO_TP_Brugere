@@ -49,6 +49,9 @@ public class Cadenas extends javax.swing.JFrame {
         texte_lbl_nb_chiffres_bas = new javax.swing.JLabel();
         texte_nb_chiffres_bas = new javax.swing.JLabel();
         texte_score = new javax.swing.JLabel();
+        texte_tentatives = new javax.swing.JLabel();
+        bouton_recommencer = new javax.swing.JToggleButton();
+        texte_gagné_perdu = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -158,8 +161,22 @@ public class Cadenas extends javax.swing.JFrame {
         texte_nb_chiffres_bas.setText("0");
         getContentPane().add(texte_nb_chiffres_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 20, -1));
 
-        texte_score.setText("jLabel1");
+        texte_score.setText("tentatives");
         getContentPane().add(texte_score, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, -1, -1));
+
+        texte_tentatives.setText("0 sur 5");
+        getContentPane().add(texte_tentatives, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 50, -1));
+
+        bouton_recommencer.setText("Recommencer");
+        bouton_recommencer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bouton_recommencerActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bouton_recommencer, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
+
+        texte_gagné_perdu.setText("hasoul");
+        getContentPane().add(texte_gagné_perdu, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -200,6 +217,10 @@ public class Cadenas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_bouton_testerActionPerformed
 
+    private void bouton_recommencerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bouton_recommencerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bouton_recommencerActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -226,6 +247,7 @@ public class Cadenas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton bouton_recommencer;
     private javax.swing.JButton bouton_tester;
     private javax.swing.JButton down_chiffre_1;
     private javax.swing.JButton down_chiffre_2;
@@ -235,6 +257,7 @@ public class Cadenas extends javax.swing.JFrame {
     private javax.swing.JLabel texte_chiffre_2;
     private javax.swing.JLabel texte_chiffre_3;
     private javax.swing.JLabel texte_chiffre_4;
+    private javax.swing.JLabel texte_gagné_perdu;
     private javax.swing.JLabel texte_intro;
     private javax.swing.JLabel texte_lbl_nb_chiffres_bas;
     private javax.swing.JLabel texte_lbl_nb_chiffres_exacts;
@@ -243,6 +266,7 @@ public class Cadenas extends javax.swing.JFrame {
     private javax.swing.JLabel texte_nb_chiffres_exacts;
     private javax.swing.JLabel texte_nb_chiffres_haut;
     private javax.swing.JLabel texte_score;
+    private javax.swing.JLabel texte_tentatives;
     private javax.swing.JButton up_chiffre_1;
     private javax.swing.JButton up_chiffre_2;
     private javax.swing.JButton up_chiffre_3;
