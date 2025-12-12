@@ -71,15 +71,21 @@ public class page_accueil extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void diff_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diff_10ActionPerformed
-        // TODO add your handling code here:
+    Cadenas fenetreJeu = new Cadenas();
+    fenetreJeu.initialiserJeu(10); 
+    this.dispose();
     }//GEN-LAST:event_diff_10ActionPerformed
 
     private void diff_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diff_7ActionPerformed
-        // TODO add your handling code here:
+    Cadenas fenetreJeu = new Cadenas();
+    fenetreJeu.initialiserJeu(7); 
+    this.dispose();
     }//GEN-LAST:event_diff_7ActionPerformed
 
     private void diff_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diff_5ActionPerformed
-        // TODO add your handling code here:
+    Cadenas fenetreJeu = new Cadenas();
+    fenetreJeu.initialiserJeu(5); 
+    this.dispose();
     }//GEN-LAST:event_diff_5ActionPerformed
 
     /**
