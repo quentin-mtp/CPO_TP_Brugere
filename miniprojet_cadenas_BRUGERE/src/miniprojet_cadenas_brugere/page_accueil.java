@@ -33,6 +33,7 @@ public class page_accueil extends javax.swing.JFrame {
         diff_10 = new javax.swing.JButton();
         diff_7 = new javax.swing.JButton();
         diff_5 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -66,6 +67,7 @@ public class page_accueil extends javax.swing.JFrame {
             }
         });
         getContentPane().add(diff_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 110, 120));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -118,6 +120,7 @@ public class page_accueil extends javax.swing.JFrame {
     private javax.swing.JButton diff_10;
     private javax.swing.JButton diff_5;
     private javax.swing.JButton diff_7;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel texte_diff;
     // End of variables declaration//GEN-END:variables
 }
