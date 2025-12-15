@@ -53,5 +53,8 @@ public int[] verifierCombinaison(int[] proposition) {
     public int getMaxTentatives() {
         return tentative_max;
     }
+    public void setMaxTentatives(int max) {
+        this.tentative_max = max;
+    }
 }
 

@@ -9,16 +9,21 @@ package miniprojet_cadenas_brugere;
  * @author quent
  */
 public class Cadenas extends javax.swing.JFrame {
+  
     JeuCadena maPartie = new JeuCadena();
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Cadenas.class.getName());
 
     /**
      * Creates new form Cadenas
      */
-    public Cadenas() {
+    public void initialiserJeu(int max) { 
         initComponents();
-    }
-
+    maPartie.setMaxTentatives(max);  
+    maPartie.initialiserJeuCadena();  
+    texte_tentatives.setText("0 sur " + max);
+    texte_intro.setText("Trouvez le code en " + max + " tentatives!");
+    this.setVisible(true); 
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -56,7 +61,7 @@ public class Cadenas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        texte_intro.setText("Trouvez le bon code en - de 5 tentatives!");
+        texte_intro.setText("Trouvez le bon code ");
         getContentPane().add(texte_intro, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 0, 336, -1));
 
         up_chiffre_1.setText("UP");
@@ -163,8 +168,6 @@ public class Cadenas extends javax.swing.JFrame {
 
         texte_score.setText("tentatives");
         getContentPane().add(texte_score, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, -1, -1));
-
-        texte_tentatives.setText("0 sur 5");
         getContentPane().add(texte_tentatives, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 50, -1));
 
         bouton_recommencer.setText("Recommencer");
